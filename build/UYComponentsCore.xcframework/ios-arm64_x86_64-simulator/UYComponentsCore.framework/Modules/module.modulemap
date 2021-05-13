@@ -1,0 +1,11 @@
+framework module UYComponentsCore {
+  umbrella header "UYComponentsCore.h"
+
+  export *
+  module * { export * }
+}
+
+module UYComponentsCore.Swift {
+    header "UYComponentsCore-Swift.h"
+    requires objc
+}
