@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var disclamerView: DisclaimerView! {
         didSet {
-           // disclamerView.setup(title: "Framework Demo", content: "This framework rocks!")
+           disclamerView.setup(title: "Framework Demo", content: "This framework rocks!")
         }
     }
     @IBOutlet weak var okButton: UYButton!
