@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8601CF61265F18DB00EFDA35 /* UYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8601CF60265F18DB00EFDA35 /* UYButton.swift */; };
+		860F9862266261210003B1E2 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860F9861266261210003B1E2 /* NibOwnerLoadable.swift */; };
 		86A09F192649F68D00F990FD /* UYComponentsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A09F172649F68D00F990FD /* UYComponentsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86A09F212649F6D900F990FD /* HelloManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A09F202649F6D900F990FD /* HelloManager.swift */; };
 		86A09F2A2649F74B00F990FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A09F292649F74B00F990FD /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 		86A09F362649F74C00F990FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86A09F342649F74C00F990FD /* LaunchScreen.storyboard */; };
 		86A09F402649F7C300F990FD /* UYComponentsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A09F142649F68D00F990FD /* UYComponentsCore.framework */; };
 		86A09F412649F7C400F990FD /* UYComponentsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 86A09F142649F68D00F990FD /* UYComponentsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		86E3EB09265F12AF0048AD27 /* DisclaimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86E3EB08265F12AF0048AD27 /* DisclaimerView.xib */; };
+		86E3EB0C265F12FE0048AD27 /* DisclaimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E3EB0B265F12FE0048AD27 /* DisclaimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8601CF60265F18DB00EFDA35 /* UYButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UYButton.swift; sourceTree = "<group>"; };
+		860F9861266261210003B1E2 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		86A09F142649F68D00F990FD /* UYComponentsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UYComponentsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A09F172649F68D00F990FD /* UYComponentsCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UYComponentsCore.h; sourceTree = "<group>"; };
 		86A09F182649F68D00F990FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +62,8 @@
 		86A09F322649F74C00F990FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86A09F352649F74C00F990FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86A09F372649F74C00F990FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E3EB08265F12AF0048AD27 /* DisclaimerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclaimerView.xib; sourceTree = "<group>"; };
+		86E3EB0B265F12FE0048AD27 /* DisclaimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclaimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		860F9860266261130003B1E2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				860F9861266261210003B1E2 /* NibOwnerLoadable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		86A09F0A2649F68D00F990FD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,8 @@
 		86A09F162649F68D00F990FD /* UYComponentsCore */ = {
 			isa = PBXGroup;
 			children = (
+				860F9860266261130003B1E2 /* Util */,
+				86E3EB07265F12320048AD27 /* UIComponents */,
 				86A09F172649F68D00F990FD /* UYComponentsCore.h */,
 				86A09F182649F68D00F990FD /* Info.plist */,
 				86A09F202649F6D900F990FD /* HelloManager.swift */,
@@ -125,6 +143,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86E3EB07265F12320048AD27 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				86E3EB08265F12AF0048AD27 /* DisclaimerView.xib */,
+				86E3EB0B265F12FE0048AD27 /* DisclaimerView.swift */,
+				8601CF60265F18DB00EFDA35 /* UYButton.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E3EB09265F12AF0048AD27 /* DisclaimerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A09F212649F6D900F990FD /* HelloManager.swift in Sources */,
+				860F9862266261210003B1E2 /* NibOwnerLoadable.swift in Sources */,
+				86E3EB0C265F12FE0048AD27 /* DisclaimerView.swift in Sources */,
+				8601CF61265F18DB00EFDA35 /* UYButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
